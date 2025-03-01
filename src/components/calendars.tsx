@@ -39,7 +39,7 @@ export const MiniCalendar = ({ monthData, setMonthData }: CalendarDataProps ) =>
           <p className="cursor-pointer">{">"}</p>
         </div>
       </div>
-      <div className="border rounded-lg p-2">
+      <div className="border rounded-[8px] p-2">
         <table>
           <thead>
             <tr className="border-b">
@@ -90,7 +90,7 @@ export const Calendar = ({ monthData, events, setMonthData }: CalendarDataProps)
 
   return (
     <div className='w-full'>
-      <h1>{monthData["monthTitle"]} {monthData["year"]}</h1>
+      <h1 className="font-bold text-[24px]">{monthData["monthTitle"]} {monthData["year"]}</h1>
       <div className='grid grid-cols-7 gap-2'>
         {days.map((day, di) => <div key={di} className='h-min'><p className='text-center'>{day}</p></div>)}
         {rows.map((row) => row.map((day, di) => <DayBlock key={di} day={day as number} choosen={day == monthData["today"]} />))}
@@ -193,7 +193,7 @@ export const DayCalendar = ({ monthData }: CalendarDataProps) => {
 
   return (
     <div className='w-full'>
-      <h1>{monthData["monthTitle"]} {monthData["year"]}</h1>
+      <h1 className="font-bold text-[24px]">{monthData["monthTitle"]} {monthData["year"]}</h1>
       <div className='grid grid-cols-8'>
         {days.map((day, di) => <div key={di}><p className='text-center'>{day}</p></div>)}
         {["hodina", ...rows[weekToShow]].map((day, di) => <DayBlock key={di} day={day as number} choosen={day == monthData["today"]} />)}

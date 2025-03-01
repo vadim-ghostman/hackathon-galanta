@@ -30,7 +30,7 @@ const CreateEvent = () => {
   return (
     <div>
       <div className="items-center min-h-screen flex flex-col justify-between">
-        <Header />
+        <Header withLang={false} />
         <div className="px-[100px] w-full flex justify-center flex-1 py-10">
           <div className='flex flex-1 justify-between gap-5'>
             <div className='flex flex-col w-[70%] flex-shrink-0 border rounded-[20px] py-10 px-20 gap-5'>

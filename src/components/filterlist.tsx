@@ -1,6 +1,6 @@
 import Checkbox from '@/components/checkbox';
 
-interface FilterListDict { [key: string]: boolean; }
+export interface FilterListDict { [key: string]: boolean; }
 
 interface FilterListProps {
   filterList: FilterListDict;

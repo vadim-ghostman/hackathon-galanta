@@ -57,7 +57,7 @@ const CalendarBlock = () => {
         <FilterList filterList={filterList} setFilterList={setFilterList} />
         {/* <p>{filteredList}</p> */}
       </div>
-      <div className='w-full'>
+      <div className='w-full pt-5'>
         {currentTab == 0 && <Calendar
           setMonthData={setMonthData}
           events={events}
